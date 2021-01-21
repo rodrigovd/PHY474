@@ -7,7 +7,7 @@ import scipy.constants as sc
 '''This function takes the values from Dielectric Constant Data.csv and
    calculates the calibration equation to obtain elctron density.
 '''
-data = pd.DataFrame("Dielectric Constant Data.csv",delimiter='\t')
+data = pd.read_csv("Dielectric Constant Data.csv")
 dielectric_constant = data['Dielectric Constant']
 phase = data['Avg. Phase']
 
